@@ -10,6 +10,7 @@ class Account(ABC):
         ''' Defines the account values '''
         self.id = Account.id_counter
         self.balance = balance
+        Account.id_counter += 1
         
     ''' Get Methods '''
     def get_id(self) -> str:
@@ -61,8 +62,8 @@ class CurrentAccount(Account):
 ''' SavingAccount Class '''
 class SavingAccount(Account):
     ''' CurrentAccount Methods'''
-    def withdraw(self) -> None:
-        print('Can\'t Withdraw from a Saving Account')
+    def withdraw(self, value) -> None:
+        print('Can\'t Withdraw from a Saving Account\n')
         
     def show(self) -> None:
         print(f'Saving Account\n'
