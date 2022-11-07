@@ -34,12 +34,10 @@ class Account(ABC):
     @abstractmethod
     def withdraw(self) -> None:
         ''' Abstract Method '''
-        pass
     
     @abstractmethod
     def show(self) -> None:
         ''' Abstract Method '''
-        pass
     
 ''' CurrentAccount Class '''
 class CurrentAccount(Account):

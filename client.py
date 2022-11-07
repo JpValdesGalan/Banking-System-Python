@@ -1,3 +1,5 @@
+from account import Account, SavingAccount, CurrentAccount
+
 class Client:
     
     id_counter = 1 # Keeps track of ids
@@ -7,7 +9,7 @@ class Client:
         ''' Defines the Client values'''
         self.id = Client.id_counter
         self.name = name
-        self. address = address
+        self.address = address
         Client.id_counter += 1
         
     ''' Get Methods '''
