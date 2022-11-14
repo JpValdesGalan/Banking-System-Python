@@ -1,2 +1,2 @@
 # Banking-System-Python
- Proyecto Final para la materia de Diseño de Software
+Actividad para la materia de Diseño de Software
